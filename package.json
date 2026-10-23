@@ -1,0 +1,20 @@
+{
+  "name": "wantly-marketplace",
+  "version": "1.0.0",
+  "description": "Buyer-first marketplace demo (OLX-style)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "reset": "node -e \"require('fs').rmSync('data.json',{force:true})\" && node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0",
+    "multer": "^2.4.0",
+    "socket.io": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

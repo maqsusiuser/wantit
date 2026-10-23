@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wantly — Post what you want. Sellers come to you.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23002f34'/><text x='16' y='23' font-size='18' text-anchor='middle' fill='%2323e5db' font-family='Arial' font-weight='bold'>W</text></svg>">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#/" class="logo"><span class="logo-mark">W</span><span class="logo-text">wantly</span></a>
+    <label class="loc"><span>📍</span><select id="citySel"><option value="">All India</option><option>Hyderabad</option><option>Secunderabad</option><option>Bengaluru</option><option>Mumbai</option><option>Delhi</option><option>Chennai</option></select></label>
+    <form class="search" id="searchForm"><input id="searchInput" placeholder="Find iPhone 15, laptops, bikes…" autocomplete="off"><button aria-label="Search">🔍</button></form>
+    <nav class="nav" id="nav"></nav>
+  </div>
+  <div class="cats" id="catStrip"></div>
+</header>
+<main id="app"></main>
+<div id="toast"></div>
+<div id="modal" class="modal hidden"></div>
+<footer class="foot">Wantly demo · buyer-first marketplace · data is local to this machine</footer>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/app.js"></script>
+</body>
+</html>
